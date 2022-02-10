@@ -1,0 +1,32 @@
+@domain = http://localhost:3000
+
+### Places Index
+
+GET {{domain}}/places
+
+### Places Show
+
+GET {{domain}}/places/2
+
+### Places Create
+
+POST {{domain}}/places
+Content-Type: application/json
+
+{
+  "name": "Place name",
+  "address": "590302 lol"
+}
+
+### Places Update
+
+POST {{domain}}/places/2
+Content-Type: application/json
+
+{
+  "name": "Teeny's house"
+}
+
+### Places Destroy
+
+DELETE {{domain}}//places/5
